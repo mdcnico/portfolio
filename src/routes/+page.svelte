@@ -1,5 +1,3 @@
-
-
 <main class="max-w-4xl mx-auto p-6">
     <h1 class="text-4xl font-extrabold text-center mt-8 text-gray-900 dark:text-white">
         Bienvenue sur mon Portfolio
