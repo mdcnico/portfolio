@@ -12,7 +12,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/projects.jpg" alt="Projects" class="w-full h-full object-cover">
+            <img src="/images/premannee/projects.gif" alt="Projects" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -27,7 +27,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/competences.jpg" alt="Competences" class="w-full h-full object-cover">
+            <img src="/images/premannee/competences.jpg" alt="Competences" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
