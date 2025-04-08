@@ -1,18 +1,13 @@
 <script lang="ts">
     import { fade, fly } from 'svelte/transition';
+    import { page } from '$app/stores';
+
+    let projects = [];
+    $: projects = $page.data.projects;
 
     let currentIndex = 0;
     let direction: 'left' | 'right' = 'right';
     let isAnimating = false;
-
-    const projects = [
-        { title: "Projet A", image: "/images/projetA.jpg", link: "/secannee/projects/projet-a", description: "Description for Projet A", content: "Detailed content about Projet A goes here." },
-        { title: "Projet B", image: "/images/projetB.jpg", link: "/secannee/projects/projet-b" },
-        { title: "Projet C", image: "/images/projetC.jpg", link: "/secannee/projects/projet-c" },
-        { title: "Projet D", image: "/images/projetD.jpg", link: "/secannee/projects/projet-d" },
-        { title: "Projet E", image: "/images/projetE.jpg", link: "/secannee/projects/projet-e" },
-        { title: "Projet F", image: "/images/projetF.jpg", link: "/secannee/projects/projet-f" }
-    ];
 
     function nextProject() {
         if (isAnimating) return;
@@ -60,7 +55,12 @@
             >
                 <!-- Image with Grey Veil -->
                 <div class="relative w-full h-full">
-                    <img src={projects[currentIndex].image} alt={projects[currentIndex].title} class="w-full h-full object-cover">
+                    <img 
+                        src={projects[currentIndex].image} 
+                        alt={projects[currentIndex].title} 
+                        class="w-full h-full object-cover" 
+                        style="object-fit: cover; width: 100%; height: 100%;"
+                    >
                     <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <!-- Title in the Bottom -->

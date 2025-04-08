@@ -1,18 +1,13 @@
 <script lang="ts">
     import { fade, fly } from 'svelte/transition';
+    import { page } from '$app/stores';
+
+    let projects = [];
+    $: projects = $page.data.projects;
 
     let currentIndex = 0;
     let direction: 'left' | 'right' = 'right';
     let isAnimating = false;
-
-    const projects = [
-        { title: "Project A", image: "/images/projectA.jpg", link: "/troisannee/projects/project-a", description: "Description for Project A", content: "Detailed content about Project A goes here." },
-        { title: "Project B", image: "/images/projectB.jpg", link: "/troisannee/projects/project-b" },
-        { title: "Project C", image: "/images/projectC.jpg", link: "/troisannee/projects/project-c" },
-        { title: "Project D", image: "/images/projectD.jpg", link: "/troisannee/projects/project-d" },
-        { title: "Project E", image: "/images/projectE.jpg", link: "/troisannee/projects/project-e" },
-        { title: "Project F", image: "/images/projectF.jpg", link: "/troisannee/projects/project-f" }
-    ];
 
     function nextProject() {
         if (isAnimating) return;

@@ -1,11 +1,8 @@
 export const load = async () => {
     const projects = [
-        { title: "Projet A", image: "/images/projetA.jpg", description: "Description for Projet A", content: "Detailed content about Projet A goes here." },
-        { title: "Projet B", image: "/images/projetB.jpg", description: "Description for Projet B", content: "Detailed content about Projet B goes here." },
-        { title: "Projet C", image: "/images/projetC.jpg", description: "Description for Projet C", content: "Detailed content about Projet C goes here." },
-        { title: "Projet D", image: "/images/projetD.jpg", description: "Description for Projet D", content: "Detailed content about Projet D goes here." },
-        { title: "Projet E", image: "/images/projetE.jpg", description: "Description for Projet E", content: "Detailed content about Projet E goes here." },
-        { title: "Projet F", image: "/images/projetF.jpg", description: "Description for Projet F", content: "Detailed content about Projet F goes here." }
+        { title: "Project A", image: "/images/secannee/project_a.jpg", link: "/secannee/projects/project-a", description: "Description for Project A", content: "Detailed content about Project A goes here." },
+        { title: "Project B", image: "/images/secannee/project_b.jpg", link: "/secannee/projects/project-b", description: "Description for Project B", content: "Detailed content about Project B goes here." },
+        { title: "Project C", image: "/images/secannee/project_c.jpg", link: "/secannee/projects/project-c", description: "Description for Project C", content: "Detailed content about Project C goes here." }
     ];
 
     return { projects };
