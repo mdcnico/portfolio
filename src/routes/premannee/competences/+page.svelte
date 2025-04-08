@@ -22,7 +22,7 @@
     >
         <div class="p-6">
             <h2 class="text-2xl font-bold text-gray-100 group-hover:text-gray-400 transition-colors duration-300">Compétences générales</h2>
-            <p class="text-gray-400 mt-2" style="overflow-wrap: break-word; word-break: break-word;">Découvrez les compétences acquises durant ma première année.</p>
+            <p class="text-gray-400 mt-2" style="overflow-wrap: break-word; word-break: break-word;">Au cours de cette année, nous avons eu l'occasion de prendre part à un lot de travaux de groupe assez conséquent. Que cela soit dans le cadre des SAE ou des TP notés, chaque fois nous avions l'occasion de travailler avec de nouvelles personnes et apprendre à travailler avec.</p>
         </div>
     </div>
 
@@ -32,7 +32,7 @@
     >
         <div class="p-6">
             <h2 class="text-2xl font-bold text-gray-100 group-hover:text-gray-400 transition-colors duration-300">Compétences linguistiques</h2>
-            <p class="text-gray-400 mt-2" style="overflow-wrap: break-word; word-break: break-word;">Explorez les activités et événements marquants de ma première année.</p>
+            <p class="text-gray-400 mt-2" style="overflow-wrap: break-word; word-break: break-word;">Cette année était aussi une passerelle vers le monde professionnel avec un apprentissage plus étayé de l'anglais, dans le domaine professionnel, dans le cadre de présentations orales ou, par le biais du code.</p>
         </div>
     </div>
 </div>
