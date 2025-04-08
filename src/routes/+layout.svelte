@@ -33,7 +33,12 @@
     let showMenu = false;
 
     // @ts-ignore
-    const capitalizeFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+    const capitalizeFirstLetter = (str) => 
+        str.replace(/-/g, ' ') // Replace hyphens with spaces
+           .split(' ') // Split into words
+           // @ts-ignore
+           .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+           .join(' '); // Join words back with spaces
 
     $: currentRoute = capitalizeFirstLetter(
         $page.url.pathname === '/' 
