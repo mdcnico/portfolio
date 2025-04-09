@@ -31,7 +31,7 @@
     <!-- Cards container -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div class="flex-1 flex flex-col justify-start space-y-8 ml-8">
-        <h1 class="text-4xl font-extrabold text-center mt-8 text-gray-100">
+        <h1 class="text-4xl font-extrabold text-center mt-4 text-gray-100">
             Qui suis-je ?
         </h1>
 
@@ -68,7 +68,7 @@
         <!-- Presentation Card -->
         <!-- svelte-ignore a11y_click_events_have_key_events -->
         <div 
-            class="flex flex-row items-center cursor-pointer space-x-4 mt-16" 
+            class="flex flex-row items-center cursor-pointer space-x-4 mt-2" 
             on:click={togglePresentationDetails}
         >
             <div class="relative w-24 h-24 flex-shrink-0">
@@ -87,7 +87,7 @@
                     <div class="text-left">
                         <h2 class="text-2xl font-bold text-gray-100">Loisirs et passions</h2>
                         <p class="text-gray-400 mt-2" transition:slide>
-                            Passioné de jeux vidéos et d'informatique, je passe la plupart de mon temps à jouer à des jeux vidéos compétitifs comme League of Legends, Counter-Strike ou encore Rocket League. Également passionné d'esport depuis jeune, je suis un fervent fan de la scène et de son développement, surtout de la structure français, la Karmine Corp.
+                            Passioné de jeux vidéos et d'informatique, je passe la plupart de mon temps à jouer à des jeux vidéos compétitifs comme League of Legends, Counter-Strike ou encore Rocket League. Également passionné d'esport depuis jeune, je suis un fervent fan de la scène et de son développement, surtout de la structure française, la Karmine Corp.
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
         <!-- Experience Card -->
         <!-- svelte-ignore a11y_click_events_have_key_events -->
         <div 
-            class="flex flex-row items-center cursor-pointer space-x-4 mt-16" 
+            class="flex flex-row items-center cursor-pointer space-x-4 mt-2" 
             on:click={toggleExperienceDetails}
         >
             <div class="relative w-24 h-24 flex-shrink-0">

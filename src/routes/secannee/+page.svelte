@@ -8,7 +8,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
     <!-- Projects Card -->
     <a
-        href="/premannee/projects"
+        href="/secannee/projects"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
@@ -23,7 +23,7 @@
 
     <!-- Competences Card -->
     <a
-        href="/premannee/competences"
+        href="/secannee/competences"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">

@@ -1,18 +1,31 @@
 import type { PageServerLoad } from './$types';
 
+// Utility function to normalize slugs
+const normalizeSlug = (title: string) =>
+    title
+        .toLowerCase()
+        .normalize('NFD') // Decompose accents
+        .replace(/[\u0300-\u036f]/g, '') // Remove accents
+        .replace(/\s+/g, '-') // Replace spaces with hyphens
+        .replace(/[^a-z0-9-]/g, ''); // Remove non-alphanumeric characters
+
 const projects = [
-    { title: "Projet A", image: "/images/projetA.jpg", description: "Description for Projet A", content: "Detailed content about Projet A goes here." },
-    { title: "Projet B", image: "/images/projetB.jpg", description: "Description for Projet B", content: "Detailed content about Projet B goes here." },
-    { title: "Projet C", image: "/images/projetC.jpg", description: "Description for Projet C", content: "Detailed content about Projet C goes here." },
-    { title: "Projet D", image: "/images/projetD.jpg", description: "Description for Projet D", content: "Detailed content about Projet D goes here." },
-    { title: "Projet E", image: "/images/projetE.jpg", description: "Description for Projet E", content: "Detailed content about Projet E goes here." },
-    { title: "Projet F", image: "/images/projetF.jpg", description: "Description for Projet F", content: "Detailed content about Projet F goes here." },
+    { title: "Ticketing System", image: "/images/secannee/ticketing.jpg", content: "" },
+    { title: "Genti Voisins", image: "/images/premannee/gentivoisins.jpg", content: ""},
 ];
 
 export const load: PageServerLoad = ({ params }) => {
-    const project = projects.find(p => p.title.toLowerCase().replace(/\s+/g, '-') === params.name);
-    if (!project) {
+    const currentIndex = projects.findIndex(
+        p => normalizeSlug(p.title) === params.name
+    );
+    if (currentIndex === -1) {
         throw new Error('Project not found');
     }
-    return project;
+
+    const project = projects[currentIndex];
+    const nextProject = projects[(currentIndex + 1) % projects.length]; // Circular navigation
+    return {
+        ...project,
+        next: normalizeSlug(nextProject.title)
+    };
 };

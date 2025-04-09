@@ -1,9 +1,16 @@
 export const load = async () => {
+    const normalizeSlug = (title: string) =>
+        title
+            .toLowerCase()
+            .normalize('NFD') // Decompose accents
+            .replace(/[\u0300-\u036f]/g, '') // Remove accents
+            .replace(/\s+/g, '-') // Replace spaces with hyphens
+            .replace(/[^a-z0-9-]/g, ''); // Remove non-alphanumeric characters
+
     const projects = [
-        { title: "Project A", image: "/images/secannee/project_a.jpg", link: "/secannee/projects/project-a", description: "Description for Project A", content: "Detailed content about Project A goes here." },
-        { title: "Project B", image: "/images/secannee/project_b.jpg", link: "/secannee/projects/project-b", description: "Description for Project B", content: "Detailed content about Project B goes here." },
-        { title: "Project C", image: "/images/secannee/project_c.jpg", link: "/secannee/projects/project-c", description: "Description for Project C", content: "Detailed content about Project C goes here." }
+        { title: "Ticketing system", image: "/images/secannee/ticketing.jpg", link: `/secannee/projects/${normalizeSlug("Ticketing system")}`, description: "Description for Morpion", content: "Detailed content about Morpion goes here." },
+        { title: "Genti Voisins", image: "/images/secannee/gentivoisins.jpg", link: `/secannee/projects/${normalizeSlug("Genti Voisins")}`, description: "Description for Jeu de Nim", content: "Detailed content about Jeu de Nim goes here." },
     ];
 
-    return { projects };
+    return { projects }; // Ensure projects is returned
 };
