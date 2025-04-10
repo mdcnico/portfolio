@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex flex-wrap md:flex-nowrap p-4">
-    <div class="w-full flex flex-col items-center mb-4 md:w-1/2">
+    <div class="w-full flex flex-col items-center mb-4 pr-8 md:w-1/2">
         <div class="flex space-x-4 w-full">
             <img src={data.image[0]} alt={data.title} 
                  class="w-1/3 h-auto object-cover rounded-lg opacity-90" />
