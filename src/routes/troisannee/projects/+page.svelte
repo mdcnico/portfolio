@@ -33,17 +33,6 @@
 <p class="text-center text-lg mb-12 text-gray-300">Voici quelques projets réalisés durant ma troisième année d'études.</p>
 
 <div class="relative flex items-center justify-center">
-    <!-- Left Arrow -->
-    <button
-        class="absolute left-4 z-10 p-3 bg-gray-800 text-gray-100 rounded-full hover:bg-gray-700 transition shadow-lg"
-        on:click={previousProject}
-        aria-label="Previous Project"
-    >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
-
     <!-- Project Card Container -->
     <div class="relative w-[90%] max-w-4xl h-[60vh] overflow-hidden bg-gray-800 rounded-xl">
         {#key currentIndex}
@@ -69,15 +58,4 @@
             </a>
         {/key}
     </div>
-
-    <!-- Right Arrow -->
-    <button
-        class="absolute right-4 z-10 p-3 bg-gray-800 text-gray-100 rounded-full hover:bg-gray-700 transition shadow-lg"
-        on:click={nextProject}
-        aria-label="Next Project"
-    >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-    </button>
 </div>

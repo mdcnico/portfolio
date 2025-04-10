@@ -29,8 +29,8 @@
     }
 </script>
 
-<h1 class="text-center text-4xl mt-8 font-extrabold mb-8 text-gray-100">Seconde année</h1>
-<p class="text-center text-lg mb-12 text-gray-300">Voici quelques projets réalisés durant ma seconde année d'études.</p>
+<h1 class="text-center text-4xl mt-8 font-extrabold mb-8 text-gray-100">Deuxième année</h1>
+<p class="text-center text-lg mb-12 text-gray-300">Voici quelques projets réalisés durant ma deuxième année d'études.</p>
 
 <div class="relative flex items-center justify-center">
     <!-- Left Arrow -->

@@ -19,7 +19,7 @@
         in:slide={{ duration: 300 }} out:slide={{ duration: 300 }}>
         <button class="link-button block mt-20 mb-4" on:click={() => { showMenu = false; window.location.href = '/' }}>Accueil</button>
         <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '/premannee' }}>Première Année</button>
-        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '/secannee' }}>Seconde Année</button>
+        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '/secannee' }}>Deuxième Année</button>
         <button class="link-button block" on:click={() => { showMenu = false; window.location.href = '/troisannee' }}>Troisième Année</button>
     </div>
 </div>
@@ -46,7 +46,7 @@
             : $page.url.pathname === '/premannee' 
             ? 'Première Année' 
             : $page.url.pathname === '/secannee' 
-            ? 'Seconde Année' 
+            ? 'Deuxième Année' 
             : $page.url.pathname === '/troisannee' 
             ? 'Troisième Année'
             : $page.url.pathname.split('/').filter(Boolean).pop()
