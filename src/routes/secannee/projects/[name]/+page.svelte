@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 
     export let data: { title: string; image: string; description?: string; content?: string; next?: string };
 
@@ -20,7 +21,7 @@
             </div>
         {/if}
         {#if data.next}
-            <a href={`/secannee/projects/${data.next}`} 
+            <a href={`${base}/secannee/projects/${data.next}`} 
                class="fixed bottom-4 right-4 w-36 h-12 bg-blue-500 text-white flex items-center justify-between px-4 rounded-lg shadow-lg hover:bg-blue-600">
                 <span class="text-sm font-medium">Next Project</span>
                 <div class="w-0 h-0 border-t-6 border-b-6 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>

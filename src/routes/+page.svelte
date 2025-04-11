@@ -1,3 +1,7 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <main class="max-w-4xl mx-auto p-6 text-gray-200">
     <h1 class="text-4xl font-extrabold text-center mt-8 text-gray-100">
         Bienvenue sur mon Portfolio
@@ -19,7 +23,7 @@
         </a>
     
         <a
-            href="/presentation"
+            href="{base}/presentation"
             class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group flex flex-row-reverse items-center"
         >
             <div class="relative w-24 h-24 flex-shrink-0 mr-2">

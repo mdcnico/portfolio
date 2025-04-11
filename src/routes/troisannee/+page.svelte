@@ -1,5 +1,5 @@
 <script lang="ts">
-    // No additional logic is needed for this page.
+    import { base } from '$app/paths';
 </script>
 
 <h1 class="text-center text-4xl font-extrabold mb-8 mt-8 text-gray-100">Troisième année</h1>
@@ -8,7 +8,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
     <!-- Projects Card -->
     <a
-        href="/troisannee/projects"
+        href="{base}/troisannee/projects"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
@@ -23,7 +23,7 @@
 
     <!-- Competences Card -->
     <a
-        href="/troisannee/competences"
+        href="{base}/troisannee/competences"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
@@ -37,7 +37,7 @@
     </a>
 
     <a
-        href="/troisannee/alternance"
+        href="{base}/troisannee/alternance"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">

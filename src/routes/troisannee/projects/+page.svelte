@@ -1,6 +1,7 @@
 <script lang="ts">
     import { fade, fly } from 'svelte/transition';
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 
     let projects = [];
     $: projects = $page.data.projects;

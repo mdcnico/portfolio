@@ -1,3 +1,5 @@
+import { base } from '$app/paths';
+
 export const load = async () => {
     const normalizeSlug = (title: string) =>
         title
@@ -14,7 +16,7 @@ export const load = async () => {
 
     const projects = rawProjects.map(project => ({
         ...project,
-        link: `/secannee/projects/${normalizeSlug(project.title)}`
+        link: `${base}/secannee/projects/${normalizeSlug(project.title)}`
     }))
 
     return { projects }; // Ensure projects is returned

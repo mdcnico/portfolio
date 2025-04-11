@@ -17,10 +17,10 @@
     <!-- svelte-ignore a11y_interactive_supports_focus -->
     <div class="menu bg-gray-800 text-white p-4 fixed top-0 left-0 h-full w-64" on:click|stopPropagation role="dialog" aria-label="Menu" 
         in:slide={{ duration: 300 }} out:slide={{ duration: 300 }}>
-        <button class="link-button block mt-20 mb-4" on:click={() => { showMenu = false; window.location.href = '/' }}>Accueil</button>
-        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '/premannee' }}>Première Année</button>
-        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '/secannee' }}>Deuxième Année</button>
-        <button class="link-button block" on:click={() => { showMenu = false; window.location.href = '/troisannee' }}>Troisième Année</button>
+        <button class="link-button block mt-20 mb-4" on:click={() => { showMenu = false; window.location.href = '{base}/' }}>Accueil</button>
+        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '{base}/premannee' }}>Première Année</button>
+        <button class="link-button block mb-4" on:click={() => { showMenu = false; window.location.href = '{base}/secannee' }}>Deuxième Année</button>
+        <button class="link-button block" on:click={() => { showMenu = false; window.location.href = "{base}/troisannee" }}>Troisième Année</button>
     </div>
 </div>
 {/if}
