@@ -12,7 +12,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/secannee/projects.jpg" alt="Projects" class="w-full h-full object-cover">
+            <img src="{base}/images/secannee/projects.jpg" alt="Projects" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -27,7 +27,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/secannee/competences.jpg" alt="Competences" class="w-full h-full object-cover">
+            <img src="{base}/images/secannee/competences.jpg" alt="Competences" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -37,11 +37,11 @@
     </a>
 
     <a
-        href="/secannee/stage"
+        href="{base}/secannee/stage"
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/secannee/stage.jpg" alt="Stage" class="w-full h-full object-cover">
+            <img src="{base}/images/secannee/stage.jpg" alt="Stage" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">

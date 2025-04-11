@@ -1,6 +1,7 @@
 <script lang="ts">
     import { fade, fly } from 'svelte/transition';
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
     
 
     let projects = [];
@@ -57,7 +58,7 @@
                 <!-- Image with Grey Veil -->
                 <div class="relative w-full h-full">
                     <img 
-                        src={projects[currentIndex].image} 
+                        src={base}{projects[currentIndex].image} 
                         alt={projects[currentIndex].title} 
                         class="w-full h-full object-cover" 
                         style="object-fit: cover; width: 100%; height: 100%;"

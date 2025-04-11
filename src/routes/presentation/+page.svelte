@@ -1,5 +1,6 @@
 <script>
     import { fade, slide } from 'svelte/transition';
+    import { base } from '$app/paths'; // Import base path for images
 
     let showGitHubDetails = false;
     let showPresentationDetails = false;
@@ -22,7 +23,7 @@
     <!-- Image taking 1/3 of the page -->
     <div class="w-1/3 h-screen">
         <img 
-            src="/images/presentation2.jpg" 
+            src="{base}/images/presentation2.jpg" 
             alt="Background" 
             class="w-full h-full object-cover rounded-lg shadow-lg"
         />
@@ -45,7 +46,7 @@
             <div class="relative w-24 h-24 flex-shrink-0">
                 <img 
                     draggable="false" 
-                    src="/images/iut_metz.jpg" 
+                    src="{base}/images/iut_metz.jpg" 
                     alt="Scolarité" 
                     class="w-full h-full object-cover rounded-full"
                 />
@@ -74,7 +75,7 @@
             <div class="relative w-24 h-24 flex-shrink-0">
                 <img 
                     draggable="false" 
-                    src="/images/esport.jpg" 
+                    src="{base}/images/esport.jpg" 
                     alt="Loisirs" 
                     class="w-full h-full object-cover rounded-full"
                 />
@@ -103,7 +104,7 @@
             <div class="relative w-24 h-24 flex-shrink-0">
                 <img 
                     draggable="false" 
-                    src="/images/travail.jpg" 
+                    src="{base}/images/travail.jpg" 
                     alt="Expériences professionnelles" 
                     class="w-full h-full object-cover rounded-full"
                 />

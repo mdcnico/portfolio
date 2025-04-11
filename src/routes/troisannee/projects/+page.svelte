@@ -45,7 +45,7 @@
             >
                 <!-- Image with Grey Veil -->
                 <div class="relative w-full h-full">
-                    <img src={projects[currentIndex].image} alt={projects[currentIndex].title} class="w-full h-full object-cover">
+                    <img src={base}{projects[currentIndex].image} alt={projects[currentIndex].title} class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <!-- Title in the Bottom-Left -->

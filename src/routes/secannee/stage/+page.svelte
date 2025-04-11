@@ -1,12 +1,13 @@
 <script lang="ts">
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 
     $: name = $page.params.name;
 </script>
 
 <div class="flex flex-wrap md:flex-nowrap p-4">
     <div class="w-full md:w-1/3 flex flex-col items-center mb-4">
-        <img src="/images/secannee/stage.jpg" alt="" 
+        <img src="{base}/images/secannee/stage.jpg" alt="" 
              class="w-full h-auto object-cover rounded-lg mb-4 opacity-90 aspect-video" />
         <h1 class="text-4xl font-bold text-gray-100 mb-4 text-center">Stage de fin d'année</h1>
     </div>

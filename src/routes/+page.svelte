@@ -13,7 +13,7 @@
             target="_blank"
         >
             <div class="relative w-24 h-24 flex-shrink-0 ml-2">
-                <img src="/images/github.png" alt="Projects" class="w-full h-full object-cover rounded-full">
+                <img src="{base}/images/github.png" alt="Projects" class="w-full h-full object-cover rounded-full">
                 <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 transition-opacity duration-300 rounded-full"></div>
             </div>
             <div class="p-6 flex-1 text-right">
@@ -27,7 +27,7 @@
             class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group flex flex-row-reverse items-center"
         >
             <div class="relative w-24 h-24 flex-shrink-0 mr-2">
-                <img src="/images/presentation.jpg" alt="Competences" class="w-full h-full object-cover rounded-full">
+                <img src="{base}/images/presentation.jpg" alt="Competences" class="w-full h-full object-cover rounded-full">
                 <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 transition-opacity duration-300 rounded-full"></div>
             </div>
             <div class="p-6 flex-1">

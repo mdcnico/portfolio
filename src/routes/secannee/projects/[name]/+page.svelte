@@ -9,7 +9,7 @@
 
 <div class="flex flex-wrap md:flex-nowrap p-4">
     <div class="w-full md:w-1/2 flex flex-col items-center mb-4">
-        <img src={data.image} alt={data.title} 
+        <img src={base}{data.image} alt={data.title} 
              class="w-full h-auto object-cover rounded-lg mb-4 opacity-90 aspect-video" />
         <h1 class="text-4xl font-bold text-gray-100 mb-4 text-center">{data.title}</h1>
     </div>

@@ -12,7 +12,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/troisannee/projects.png" alt="Projects" class="w-full h-full object-cover">
+            <img src="{base}/images/troisannee/projects.png" alt="Projects" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -27,7 +27,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/troisannee/competences.jpg" alt="Competences" class="w-full h-full object-cover">
+            <img src="{base}/images/troisannee/competences.jpg" alt="Competences" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -41,7 +41,7 @@
         class="block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-250 group"
     >
         <div class="relative w-full h-64">
-            <img src="/images/troisannee/alternance.jpg" alt="Stage" class="w-full h-full object-cover">
+            <img src="{base}/images/troisannee/alternance.jpg" alt="Stage" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">

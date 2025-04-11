@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 
     // Access the current route's name parameter
     $: name = $page.params.name;
@@ -8,11 +9,11 @@
 <div class="flex flex-wrap md:flex-nowrap p-4">
     <div class="w-full flex flex-col items-center mb-4 md:w-1/2">
         <div class="flex space-x-4 w-full">
-            <img src="/images/troisannee/javascript.png" alt=""
+            <img src="{base}/images/troisannee/javascript.png" alt=""
                  class="w-1/3 h-auto object-cover rounded-lg opacity-90" />
-            <img src="/images/troisannee/svn.jpg" alt=""
+            <img src="{base}/images/troisannee/svn.jpg" alt=""
                  class="w-1/3 h-auto object-cover rounded-lg opacity-90" />
-            <img src="/images/troisannee/php.png" alt=""
+            <img src="{base}/images/troisannee/php.png" alt=""
                  class="w-1/3 h-auto object-cover rounded-lg opacity-90" />
         </div>
         <h1 class="text-4xl font-bold text-gray-100 mt-2 text-center">Alternance au LCPP</h1>
